@@ -1,0 +1,17 @@
+[
+  {
+    "task_id": "task_001",
+    "conversation": [
+      {"role": "user", "text": "What is the capital of France?"},
+      {"role": "agent", "text": "The capital of France is Paris."},
+      {"role": "user", "text": "What is its population?"}
+    ],
+    "corpus": [
+      {"doc_id": "doc1", "text": "Paris is the capital of France with a population of 2.1 million."},
+      {"doc_id": "doc2", "text": "France is a country in Western Europe."}
+    ],
+    "relevant_passages": ["doc1"],
+    "answerable": true,
+    "domain": "test"
+  }
+]

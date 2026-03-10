@@ -1,0 +1,22 @@
+# Dense retrieval configuration
+
+retrieval:
+  method: "dense"
+  top_k: 10
+  use_history: true
+  
+  dense:
+    model_name: "sentence-transformers/all-mpnet-base-v2"
+    batch_size: 32
+
+data:
+  split: "validation"
+  use_chunked: true
+
+output:
+  save_index: true
+  index_dir: "./artifacts/models/dense_index"
+  predictions_dir: "./artifacts/results/task_a_dense"
+
+reproducibility:
+  seed: 42

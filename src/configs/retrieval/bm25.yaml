@@ -1,0 +1,13 @@
+retrieval:
+  method: "bm25"
+  top_k: 10
+  use_history: true
+  bm25:
+    k1: 1.5
+    b: 0.75
+data:
+  split: "validation"
+output:
+  predictions_dir: "./artifacts/results/task_a_bm25"
+reproducibility:
+  seed: 42
